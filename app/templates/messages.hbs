@@ -1,0 +1,38 @@
+<div style="text-align: center" class="container">
+  <h2 class="text-center">Message Center</h2>
+  <div class="row form-group">
+    <div class="col-md-12">
+      {{input  class="name-input form-control" type="text" placeholder="Regarding" value=name}}
+    </div>
+  </div>
+
+  {{textarea class="msg-input form-control" type="text" placeholder="Message" value=body}}
+
+  <div class="row">
+    <div class="col-sm-12 form-group">
+      <button class="btn btn-success pull-right" type="submit" {{action 'publishMessage'}}>Send</button>
+    </div>
+  </div>
+</div>
+
+{{#easy-dropdown elementId='dropdown-test' classNames='nav-bar-dp pull-center' }}
+  <div class="container" style="text-align: center">
+    {{#each model as | messageinput|}}
+      <div class="row panel">
+        <div class="panel-title text-center">
+          <h2> Regarding: {{messageinput.name}} </h2>
+        </div>
+
+        <div class="col-sm-12 text-center">
+          <div class="panel-body">
+            <div><strong>Message: </strong>{{messageinput.body}}
+              <button class="btn btn-danger" {{action "deleteMessage" messageinput}}>Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    {{/each}}
+</div>
+{{/easy-dropdown}}
+
+{{outlet}}

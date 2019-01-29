@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-md navbar-dark mainNav">
+	<h6 class="my-0 mr-md-auto font-weight-normal"> {{session.currentUser.email }} </h6>
+	<button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		<span class="navbar-toggler-icon togglerColor">   
+		</span>
+	</button>
+	
+	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+		<ul class = "nav navbar-nav ml-auto navbar-right">
+            <li class="nav-item">
+				{{#link-to 'welcome' class="nav-link navButton" tagName='anchor'}}Welcome{{/link-to}}
+            </li>
+            <li class = "nav-item">
+                {{#link-to 'taskforminput' class="nav-link navButton" tagName='anchor'}}Task Manager{{/link-to}}
+            </li>
+			<li class="nav-item">
+				{{#link-to 'messages' class="nav-link navButton" tagName='anchor'}} Messages {{/link-to}}
+			</li>
+			<li class="nav-item">
+				{{#link-to 'about' class="nav-link navButton" tagName='anchor'}}About{{/link-to}}
+			</li>
+			<li class = "nav-item">
+				<a class='navButton nav-link' tagName='button' {{action 'signOut'}}>Sign Out</a>
+            </li>
+			
+        </ul>
+	</div>  
+</nav>
+
+
+

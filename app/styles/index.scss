@@ -1,0 +1,26 @@
+#indexBody {
+	height: 100vh;
+	width: 100%;
+	margin: 0;
+}
+	
+#background {
+	background-image: url("http://hdwallpapersrocks.com/wp-content/uploads/2013/09/Sunset-good-night-wishes-HD-wallpaper.jpg");
+	height: 100%;
+	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+	
+#imageText {
+	padding-top: 100px;
+}
+
+#imageText, #imageLink {	
+	color: #ffffff;
+}
+	
+#imageLink:hover {
+	color: #555555 !important;
+}

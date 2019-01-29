@@ -1,0 +1,63 @@
+.container {
+	margin: 0 auto;
+}
+
+.col-lg-12, .col-md-6 > h2, .col-lg-6 > h1, .col-lg-6 > h2, .col-lg-4 > h3 {
+	text-align: center;
+}
+
+.bg-1 { 
+	background-image: linear-gradient( rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url("https://shibboleth.fullerton.edu/idp/images/bg-login.jpg");
+	width: 100%;
+	height: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    padding: 200px 0px;
+}
+
+.createdByUL {
+	list-style-type: none;
+	text-align: center;
+}
+
+.createdByUL > li > a {
+	font-weight: bold;
+	color: #222200; 
+}
+
+.jumbotron {
+	border: 0px solid black;
+	font: 20px Montserrat, sans-serif;
+	margin-bottom: 0px;
+	background-color: white;
+}
+
+.jumbotronRow1 {
+	padding-bottom: 50px;
+}
+
+.jumbotron h2 {
+	font: 25px Montserrat, sans-serif;
+	text-align: center;
+}
+
+.jumbotron ul, .jumbotron p, .thirdContainer ul {
+	font: 15px Montserrat, sans-serif;
+}
+
+.thirdContainer {
+	background-color: #004280; /* #084B8A; */
+	color: #f5f6f7;
+}
+
+.thirdContainer code {
+	color: #b3daff;
+}
+
+.bg-4 {
+	background-color: #333333;	
+	padding-top: 20px;
+	color: #f5f6f7;
+	font-size: 15px;
+}
